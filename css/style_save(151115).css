@@ -1,0 +1,911 @@
+/*ヘッダー*/
+.right{
+  float:right;
+}
+.navbar-brand{
+    padding:0;
+}
+
+.navbar-brand img{
+    height:40px;
+    margin:5px 0;
+}
+
+/*スライダー*/
+.slide1{
+    background-image:url("../img/mp_slider_1.png");
+    background-size:cover;
+    height:400px;
+    width:100%;
+}
+.slide2{
+    background-image:url("../img/mp_slider_2.png");
+    background-size:cover;
+    height:400px;   
+    width:100%;
+}
+.slide3{
+    background-image:url("../img/mp_slider_3.png");
+    background-size:cover;
+    height:400px;
+    width:100%;
+}
+
+.carousel-inner .caption-content:hover {
+/*    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    width: 300px;*/
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+/*
+    text-shadow:
+        -1px -1px 2px #fff,
+        1px -1px 2px #fff,
+        -1px 1px 2px #fff,
+        1px 1px 2px #fff;*/
+
+    /*text-shadow:2px 2px 10px #ffffff;*/
+}
+
+
+/*.grayscale:hover:after{
+    content:"abc";
+    background-color:#ee7800;
+    display:block;
+    height:200px;
+    position: absolute;
+    width:200px;
+    top:0px;
+}*/
+
+.grayscale:hover{
+    -webkit-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: grayscale(100%);
+/*    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;*/
+}
+.grayscale {
+    -webkit-filter: grayscale(0%);
+    filter: none;
+/*    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;*/
+}
+
+
+.grayscale2{
+    -webkit-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: grayscale(100%);
+}
+.grayscale2:hover {
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+
+
+.carousel-inner .big{
+    text-align:left;
+    font-size:60px;
+    text-align:center;
+    position:absolute;
+    top:100px;
+    left:200px;
+    color:#ffffff;
+    text-shadow:2px 2px 10px #000000;
+}
+
+.carousel-inner p{
+    text-align:left !important;
+    font-size:20px;
+    text-align:center;
+    position:absolute;
+    top:200px;
+    left:200px;
+    color:#ffffff;
+    text-shadow:2px 2px 10px #000000;
+}
+
+.col-sm-11,.col-md-11,.col-lg-11{
+  width:20%;
+}
+.col-sm-10,.col-md-10,.col-lg-10{
+  width:80%;
+}
+
+.contentbox{
+  /*border:1px solid white;*/
+  padding:10px 10px 0  10px;
+}
+
+
+.icon{
+  background-color:black;
+  height:200px;
+}
+
+.icon_big{
+  background-color:red;
+  height:315px;
+  margin-bottom:15px;
+}
+
+
+@media screen and (max-width: 991px){
+  .col-sm-11,.col-sm-10{
+    width:100%;
+  }
+}
+
+.p0{
+  padding:0;
+}
+
+
+
+.menu_title{
+    width:100%;
+    /*background-color:#333333;*/
+    background-color:#444444;
+    color:#ffffff;
+    font-size: 20px;
+    padding:5px 0;
+}
+.menu_title p{
+    margin:0;
+    padding-left:10px;
+}
+.menu_title span{
+    font-size:14px;
+    margin-left:20px;
+}
+
+.contents ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*.contents ul li {
+    float: left;
+    min-height: 100%;
+    width: 25%;
+    background-color: #666666;
+    list-style: none;
+}*/
+.contents figure {
+    position: relative;
+    overflow: hidden;
+}
+.contents figure img {
+    width: 100%;
+    /*height: 100%;*/
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.contents figure:hover img, .contents figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.contents figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(63, 97, 132, 0.85);*/
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.contents figcaption a {
+    color: #fff
+}
+.contents figcaption a:hover, .contents figcaption a:focus {
+    color: #ffffff;
+}
+.contents figure:hover figcaption, .contents figure:focus figcaption {
+    opacity: 1
+}
+
+.contents figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(238, 120, 0, 0.7);*/
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.contents a figcaption {
+    color: #fff
+}
+.contents a:hover figcaption, .contents a:focus figcaption {
+    color: #ffffff;
+}
+.contents figure:hover figcaption, .contents figure:focus figcaption {
+    opacity: 1
+}
+.visible {
+    opacity: 1
+}
+
+
+/*最近の投稿パーツ用*/
+.news{
+    width:100%;
+}
+
+.news p{
+    margin:0;
+    color:#333333;
+    margin-bottom:5px;
+}
+
+.news_title span{
+    font-size:14px;
+    margin-left:20px;
+}
+
+ul{
+    width:100%;
+}
+
+.kiji1{
+    color:#ffffff;
+    font-size: 13px;
+    padding:5px;
+}
+.kiji2{
+    color:#ffffff;
+    font-size: 13px;
+    padding:5px;
+}
+.kiji3{
+    color:#ffffff;
+    font-size: 13px;
+    padding:5px;
+}
+.kiji4{
+    color:#ffffff;
+    font-size: 13px;
+    padding:5px;
+}
+.kiji5{
+    color:#ffffff;
+    font-size: 13px;
+    padding:5px;
+}
+
+.date{
+    font-size:12px;
+}
+.kiji1:hover{
+    color:#ffffff;
+    background-color: rgba(238, 120, 0, 0.2);
+}
+.kiji2:hover{
+    color:#ffffff;
+    background-color: rgba(238, 120, 0, 0.4);
+}
+.kiji3:hover{
+    color:#ffffff;
+    background-color: rgba(238, 120, 0, 0.6);
+}
+.kiji4:hover{
+    color:#ffffff;
+    background-color: rgba(238, 120, 0, 0.8);
+}
+.kiji5:hover{
+    color:#ffffff;
+    background-color: rgba(238, 120, 0, 1.0);
+}
+
+
+
+
+
+/*ギャラリーパーツ用*/
+.garelly{
+    width:100%;
+}
+
+.garelly p{
+    margin:0;
+    padding-left:10px;
+}
+
+.garelly_title span{
+    font-size:14px;
+    margin-left:20px;
+}
+
+.garelly img{
+    width:100%;
+/*    margin-left:0;
+    margin-right:0;
+    padding:0;*/
+}
+
+
+
+/*ブログリンク用パーツ*/
+
+.blog{
+    width:100%;
+}
+
+.blog p{
+    margin:0;
+    padding-left:10px;
+}
+.blog img{
+    width:100%;
+}
+
+
+/*パーツ共通*/
+.line_dot{
+    height:10px;
+    border-bottom:1px dotted #333333;
+}
+.label_go{
+    background-color:#ee7800;
+    color:#ffffff;
+    width:50px;
+    float:right;
+/*    position: absolute;
+    top:124px;*/
+}
+.label_go p{
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+.label_go a{
+    color:#ffffff;
+}
+.label_go a:hover{
+    color:#ffffff;
+}
+
+a{
+    color:#333333;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*フッター用*/
+footer{
+    background-color:#333333;
+    color:#ffffff;
+    padding:20px 0;
+    margin-bottom:0;
+}
+footer ul{
+    text-align: left;
+    padding:0;
+}
+@media screen and (max-width:767px){
+footer ul{
+    text-align: center;
+}
+}
+footer li{
+    /*display:inline-block;*/
+    margin:0 5px;
+    list-style:none;
+    margin-bottom:10px;
+}
+footer a{
+    color:#ffffff;
+}
+footer a:hover{
+    color:#ee7800;
+}
+
+.copyright{
+    margin-top:50px;
+}
+
+
+
+.inline{
+    display:inline-block;
+    float:left;
+}
+
+
+/*明朝にするためのCSS追加*/
+body p{
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+body li{
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+body h2,h3{
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+body{
+    padding-top:60px;
+}
+
+
+.pb0{
+    padding-bottom:0;
+}
+
+
+.contents .menubox img {
+    width: 100%;
+/*    -webkit-filter: grayscale(70%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;*/
+    }
+
+/*.contents .menubox img:hover {
+    -webkit-filter: grayscale(90%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: none;
+    }*/
+
+.contents .menubox p{
+    font-size:13px;
+    margin-left:0px;
+}
+
+.contentbox .menubox h2{
+    font-size: 35px;
+    color:#ffffff;
+    margin-left:15px;
+    position: absolute;
+    top:15px;
+    /*text-shadow:1px 1px 1px #999999;*/
+}
+
+.contentbox .menubox h3{
+    font-size: 18px;
+    margin:10px 0 5px 0px;
+}
+
+/*.blog_photo{
+    padding:0;
+}*/
+
+/*.blog_text{
+    padding:0;
+}*/
+
+.blog_photo{
+    overflow: hidden;
+}
+.blog_photo img{
+    width:64px;
+    height:47px;
+}
+
+.garelly_title{
+    width:100%;
+    border-bottom:2px solid #333333;
+    margin-bottom:5px;
+}
+.garelly_title h3{
+    font-size: 18px;
+}
+
+.news_title{
+    width:100%;
+    border-bottom:2px solid #333333;
+    margin-bottom:5px;
+}
+.news_title h3{
+    font-size: 18px;
+}
+.contentbox .garelly h2{
+    font-size:83px;
+    color:#ffffff;
+    margin-left:15px;
+    position: absolute;
+    top:190px;
+    text-align: center;
+    line-height: 13px;
+    /*text-shadow:1px 1px 1px #999999;*/
+}
+@media screen and (max-width:767px){
+.contentbox .garelly h2{
+    top:160px;
+    left:30px;
+}
+}
+
+@media screen and (max-width:767px){
+    .contentbox .garelly h2{
+    font-size:60px;
+}
+}
+
+.contentbox .garelly h2 span{
+    font-size:15px;
+}
+
+.contentbox .garelly img{
+    width: 100%;
+/*    -webkit-filter: grayscale(70%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;*/
+}
+
+.contentbox .garelly img:hover{
+    -webkit-filter: grayscale(90%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: none;
+}
+
+.contact_title{
+    width:100%;
+    border-bottom:2px solid #333333;
+    margin-bottom:5px;
+}
+.contact_title h3{
+    margin-top:0;
+    font-size: 18px;
+}
+
+
+/*ショップ紹介リンク用パーツ*/
+
+.shopinfo_title{
+    width:100%;
+    border-bottom:2px solid #333333;
+    margin-bottom:5px;
+}
+.shopinfo_title h3{
+    margin-top:0;
+    font-size: 18px;
+}
+.shopinfo ul{
+    position:absolute;
+    top:60px;
+    left:90px;
+    list-style: none;
+    margin-left:15px;
+    color:#ffffff;
+    font-size: 15px;
+    line-height: 27px;
+    /*スマホのときはみ出してレイアウトくずれるので、ひとまず追加*/
+    width:150px;
+}
+.shopinfo img{
+    width:100%;
+}
+
+
+.blog p{
+    position:absolute;
+    top:130px;
+    color:#ffffff;
+    font-size: 12px;
+    padding:0;
+    margin-left:5px;
+}
+.blog_title{
+    width:100%;
+    border-bottom:2px solid #333333;
+    margin-bottom:5px;
+}
+.blog_title h3{
+    margin-top:0;
+    font-size: 18px;
+}
+.language{
+    float:right;
+    margin-bottom:10px;
+}
+
+.language p{
+    margin:0;
+    padding:0;
+    margin-left:4px;
+    font-size: 15px;
+    color:#333333;
+    display:inline-block;
+    vertical-align: middle;
+}
+.language h4{
+    margin:0;
+    padding:0;
+    margin-right:5px;
+    font-size: 15px;
+    color:#333333;
+    display:inline-block;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    vertical-align: middle;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+
+footer .logo img{
+    width:80%;
+}
+
+.navbar-nav > li:hover{
+    background-color: #ee7800;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #ee7800;
+}
+
+.dropdown li:hover{
+    background-color:#ee7800;
+}
+
+
+
+.orange a{
+    display: block;
+}
+
+.fadeout {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
+}
+
+.fadeout:hover {
+  opacity: 0;
+  }
+
+
+
+
+
+
+
+.menubox .bg1{
+    background-image: url("../img/icon_menu1a.png");
+    background-size: cover;
+    /*background-color: #ee7800;*/
+    width: 100%;
+}
+.menubox .bg2{
+    background-image: url("../img/icon_menu2a.png");
+    background-size: cover;
+    /*background-color: #ee7800;*/
+    width: 100%;
+}
+.menubox .bg3{
+    background-image: url("../img/icon_menu3a.png");
+    background-size: cover;
+    /*background-color: #ee7800;*/
+    width: 100%;
+}
+.menubox .bg4{
+    background-image: url("../img/icon_menu4a.png");
+    background-size: cover;
+    /*background-color: #ee7800;*/
+    width: 100%;
+}
+.garelly .bg1{
+    background-image: url("../img/icon_garellya.png");
+    background-size: cover;
+    /*background-color: #ee7800;*/
+    width: 100%;
+}
+
+
+.flag {
+    display:inline;
+}
+.flag img {
+    vertical-align: middle;
+    width:29px;
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+}
+.flag img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*ノーマルな下線*/
+/*
+.language a{
+    padding-bottom:5px;
+    margin-right:20px;
+}
+.language a:hover{
+    border-bottom:3px #333333 double;
+}*/
+
+
+
+.language a {
+  position: relative;
+  display: inline-block;
+  padding: .4em;
+  text-decoration: none;
+}
+.language a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  background-color: #333333;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.language a:hover::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*お問い合わせパーツ用*/
+
+.contact{
+    width:100%;
+}
+
+.contact p{
+    margin:0;
+    padding-left:10px;
+}
+
+.contact_main{
+    /*background-color: #999999;*/
+}
+
+.form{
+    background-color:#444444;
+  /* 幅8px、高さ8pxで背景画像のサイズを指定 */
+  background-size: 8px 8px;
+}
+.form:hover{
+    /*background-color:#ee7800;*/
+    background-color:#ee7800;
+}
+
+
+.form:hover{
+    background-image: linear-gradient(
+    -45deg,
+    #ee7800 25%,
+    #999999 25%, #999999 50%,
+    #ee7800 50%, #ee7800 75%,
+    #999999 75%, #999999
+  );
+}
+
+.form  {
+    background-image: linear-gradient(
+    -45deg,
+    #222222 25%,
+    #555555 25%, #555555 50%,
+    #222222 50%, #222222 75%,
+    #555555 75%, #555555
+  );
+/*    transition-property:font-size;
+    transition-duration:4s;
+    transition-timing-function:ease;
+    transition-delay:.1s;*/
+}
+
+
+.tel p{
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold;
+    /*color:#ee7800;*/
+    line-height: 35px;
+    padding:0px 0 10px 20px;
+    text-shadow:1px 1px 1px #999999;
+    color:#444444;
+}
+.tel p:hover{
+    color:#ee7800;
+}
+
+.form p{
+    font-size: 20px;
+    color:#ffffff;
+    padding:15px 0 15px 20px;
+    font-weight: bold;
+}
+
+.side{
+    margin-bottom:15px;
+}
+
+@media screen and (max-width:767px){
+    footer .logo img {
+    width: 60%;
+}
+.shopinfo ul{
+    top:80px;
+    left:140px;
+    margin-left:15px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.contentbox .menubox h2{
+    font-size: 30px;
+}
+footer ul{
+    display:none;
+}
+footer .map,.fb{
+    margin-bottom: 20px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    width: 180px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+     max-height: none;
+}
+.language {
+    display:none;
+}
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+li.aaa{
+    display:none;
+}
+}
+
+
